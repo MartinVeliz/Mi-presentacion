@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+
+</head>
+<body style="background-color: rgb(147, 210, 247);">
+
+    <h2>FORMULARIO</h2>
+    <br>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend style="font-family:cursive ;">Datos Personales:</legend>
+        <p>
+            <label for="Nombre"> <b>Nombre completo: </b></label>
+            <input type= "text" name="Nombre" size= "40" maxlength="5"><br><br><br>
+
+            <label for="Contraseña"> <b>Contraseña: </b></label>
+            <input type= "password" name="Contraseña" size= "40" id="Contraseña" maxlength="10"><br><br><br>
+
+            <label for="telefono"> <b>Número telefónico:  </b></label>
+            <input type= "tel" name="telefono" id="telefono" size= "40" maxlength="5"><br><br><br>
+
+            <label for="fecha"> <b>Fecha Nacimiento: </b></label>
+            <input type= "date" id= "fecha" name="fecha" size= "30" maxlength= "7"><br><br><br>
+
+            <label for="Edad"> <b>Edad: </b></label>
+            <input type= "number" id ="Edad" name="Edad" size= "40" maxlength="5" min="18" max="70" step="1"><br><br><br>
+          
+            <b>Género: </b> <br><br>
+            <input type= "radio" name="genero" id= "genero-hombre" value= "Hombre"  checked>
+            <label for="genero-hombre"> Hombre</label>
+
+            <input type= "radio" name="genero" id= "genero-mujer" value= "Mujer"  >
+            <label for="genero-mujer"> Mujer</label><br> <br>
+        
+            <label for="tuemail"> <b>Correo electrónico: </b></label>
+            <input type= "email" name="tuemail" size= "40" maxlength="5" required placeholder="name@hotmail.com"><br><br><br>
+
+            <label for="hora de entrega"> <b>Indique hora de envío del formulario:  </b></label>
+            <input type= "time" id= "hora de entrega" name="hora de entrega" value="12:00" size= "30" maxlength= "7"><br><br><br>
+
+            <label for="bio"> <b>Haga su consulta: </b></label><br><br>
+            <textarea id="bio"  name= "bio" cols="50" maxlength="50"></textarea><br><br>
+
+            <label for="sistema"><b>Seleccione su sistema operativo: </b></label>
+            <select name="estado" id="estado">
+
+                <option value="selecciona">-Selecciona-</option>
+                <option value="Windowsx86">Windowsx86</option>
+                <option value="Windowsx64">Windowsx64</option>
+                <option value="Linux">Linux</option>
+                <option value="Otros">Otros</option>
+
+            </select>
+
+        </p>
+    </fieldset>
+        <p>
+            <input type="submit" value= "Enviar datos">
+            <input type="reset" value= "Borrar datos"> 
+        </p>
+      
+
+    </form><br><br>
+    <a href="index.html">Volver al Inicio</a>
+    
+</body>
+</html>
